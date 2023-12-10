@@ -16,9 +16,14 @@ const minMax = (numArray) => {
  console.log(minMax([1,2,3,4,5,6,7,8,9]));
 
 
-(function () {
-   let length = 10;
-   let width = 5;
-   console.log(`The area of a rectangle with the length of ${length} and the width of ${width} is ${length * width}`);
-})();
+// (function () {
+//    let length = 10;
+//    let width = 5;
+//    console.log(`The area of a rectangle with the length of ${length} and the width of ${width} is ${length * width}`);
+// })();
 
+
+((length, width) => {
+
+   console.log(`The area of a rectangle with the length of ${length} and the width of ${width} is ${length * width}`);
+})(3, 10);
