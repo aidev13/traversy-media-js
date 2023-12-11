@@ -1,29 +1,30 @@
-
-
 const calculator = (num1, num2, operator) => {
+  let result;
 
-   switch (operator) {
-      case '':
-         console.log('Enter an operator: +, -, * or /');
-         break;
-      case "+":
-         console.log(num1 + num2);
-         break;
-      case '-':
-         console.log(num1 - num2);
-         break;
-      case '*':
-         console.log(num1 * num2);
-         break;
-      case '/':
-         console.log(num1 / num2);
-         break;
+  switch (operator) {
+    case "":
+      result = "Enter an operator: +, -, * or /"
+      break;
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
 
-         default:
-            console.log('Use only +, -, * or /, try again');
+    default:
+      result = 'Operator Error'
 
-   }
+  }
 
-};
+//   console.log(result);
+  return result;
+}
 
-console.log(calculator(2,4,"+"))
+console.log(calculator(2,5,'+'))
