@@ -60,3 +60,12 @@ const posNums = numbers.filter((positive) => {
 })
 
 console.log(posNums)
+
+// Challenge 3
+const words = ['coder', 'programmer', 'developer']
+
+const capitalized_words = words.map((capWord) => {
+   return capWord[0].toUpperCase() + capWord.slice(1)
+})
+
+console.log(capitalized_words)
