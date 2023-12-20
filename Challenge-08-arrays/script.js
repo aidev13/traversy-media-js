@@ -53,4 +53,10 @@ console.log(youngPeople);
 // Challenge 2
 const numbers = [2, -30, 50, 20, -12, -9, 7];
 
+const posNums = numbers.filter((positive) => {
+   return positive > 0
+}) .reduce((agg, cur) => {
+   return agg + cur
+})
 
+console.log(posNums)
